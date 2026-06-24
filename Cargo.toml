@@ -1,0 +1,25 @@
+[package]
+name = "idnr"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Validate the German tax identification number (Steuerliche Identifikationsnummer / IdNr). A faithful port of python-stdnum. Zero deps, no_std."
+documentation = "https://docs.rs/idnr"
+repository = "https://github.com/trananhtung/idnr"
+homepage = "https://github.com/trananhtung/idnr"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["idnr", "german", "steuer-id", "tax", "validation"]
+categories = ["algorithms", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
